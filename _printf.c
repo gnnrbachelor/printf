@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _printf - Simple version of printf
@@ -37,18 +36,7 @@ int _printf(const char *format, ...)
 			i += 2;
 			continue;
 		}
-		if (format[i + 1] == '%')
-		{
-			i += 2;
-			j++;
-		}
-		else
-		{
-			i++;
-			j++;
-		}
 	}
-	printf("%d\n", j);
 	va_end(v_list);
 	return (j);
 }

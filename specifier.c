@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * specifier - Determines sormat specifier
+ * match_spec - Determines format specifier
  *
  * @format: Format specifier
  *

@@ -3,7 +3,8 @@
 #include <stdarg.h>
 
 
-typedef struct print {
+typedef struct print
+{
 	char *spec;
 	int (*func)(va_list);
 } print;

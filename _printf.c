@@ -13,6 +13,7 @@
 int _printf(const char *format, ...)
 {
 	int i = 0;
+	int j;
 	va_list v_list;
 	int (*specifier)(va_list);
 
@@ -29,23 +30,32 @@ int _printf(const char *format, ...)
 		}
 
 		if (!format[i])
-			return (0);
+		{
+			j = i;
+			return (j);
+		}
 
 		specifier = match_spec(&format[i + 1]);
 
 		if (specifier != NULL)
 		{
 			specifier(v_list);
+			j = i;
+			j++;
 			i += 2;
 			continue;
 		}
 		if (format[i + 1] == '%')
+		{
+			_putchar('%');
 			i += 2;
+			j += 1;
+		}
 		else
 			i++;
 	}
 
 	va_end(v_list);
 
-	return (i);
+	return (j);
 }

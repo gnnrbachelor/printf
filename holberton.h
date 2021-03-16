@@ -14,7 +14,7 @@ int (*match_spec(const char *format))(va_list);
 int _putchar(char c);
 int print_c(va_list c);
 int print_s(va_list s);
-void print_esc(va_list esc);
+int print_percent(va_list p);
 
 
 #endif

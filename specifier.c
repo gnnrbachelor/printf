@@ -15,6 +15,7 @@ int (*match_spec(const char *format))(va_list)
 	print p[] = {
 		{"c", print_c},
 		{"s", print_s},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 

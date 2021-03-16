@@ -20,7 +20,7 @@ int print_c(va_list c)
  *
  * @s: Pointer to arg
  *
- * Return: Pointer to arg
+ * Return: # of characters in string
  */
 
 int print_s(va_list s)
@@ -35,4 +35,20 @@ int print_s(va_list s)
 	}
 	return (i);
 }
+
+/**
+ * print_percent - prints % sign
+ *
+ * @p: Pointer to arg
+ *
+ * Return: # characters printed
+ */
+
+int print_percent(va_list p)
+{
+	(void)p;
+	_putchar('%');
+	return (1);
+}
+
 

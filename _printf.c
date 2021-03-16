@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(v_list, format);
-	while (format[i])
+	while (format && format[i])
 	{
 		for (; format[i] && format[i] != '%'; i++)
 		{
@@ -34,7 +34,11 @@ int _printf(const char *format, ...)
 		{
 			j += specifier(v_list);
 			i += 2;
-			continue;
+
+			if (!format[i + 1])
+				return (-1);
+			else
+				continue;
 		}
 	}
 	va_end(v_list);

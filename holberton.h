@@ -2,6 +2,13 @@
 #define HOLBERTON_H
 #include <stdarg.h>
 
+/**
+ * struct print - Holds character pointer and function point
+ *
+ * @spec: character pointer
+ * @func: pointer to func
+ *
+ */
 
 typedef struct print
 {

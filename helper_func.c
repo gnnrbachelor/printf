@@ -35,3 +35,8 @@ int print_s(va_list s)
 	}
 	return (i);
 }
+
+
+
+
+

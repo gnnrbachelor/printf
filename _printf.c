@@ -34,12 +34,9 @@ int _printf(const char *format, ...)
 		{
 			j += specifier(v_list);
 			i += 2;
-
-			if (!format[i + 1])
-				return (-1);
-			else
-				continue;
+			continue;
 		}
+
 		if (!format[i + 1])
 			return (-1);
 		_putchar(format[i + 1]);

@@ -31,8 +31,12 @@ int _printf(const char *format, ...)
 			return (j);
 		specifier = match_spec(&format[i + 1]);
 		if (!specifier)
-			_putchar(format[i]);
-
+		{
+			if (!format[i + 1])
+				_putchar('%');
+			else
+				_putchar(format[i]);
+		}
 		if (specifier)
 		{
 			j += specifier(v_list);

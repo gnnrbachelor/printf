@@ -1,6 +1,6 @@
 .TH man 3 "15 March 2021" "1.0" "_printf man page"
 .SH NAME
-_printf - format and print data
+_printf
 .SH SYNOPSIS
 
 #include <stdio.h>

@@ -32,7 +32,8 @@ int _printf(const char *format, ...)
 		specifier = match_spec(&format[i + 1]);
 		if (!specifier)
 		{
-			_putchar(format[i]);
+			if (format[i] != '\0')
+				_putchar(format[i]);
 		}
 
 		if (specifier)

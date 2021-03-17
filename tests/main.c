@@ -40,6 +40,9 @@ int main(void)
     printf("Character:[%c]\n", 'H');
     _printf("String:[%s]\n", "I am a string !");
     printf("String:[%s]\n", "I am a string !");
+    _printf("%c", '\0');
+   _printf(NULL);
+
 /*
     _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);

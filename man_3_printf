@@ -1,17 +1,27 @@
-./" Man page for _printf function for Holberton School
 .TH man 3 "15 March 2021" "1.0" "_printf man page"
 .SH NAME
-_printf
+_printf - format and print data
 .SH SYNOPSIS
 
+#include <stdio.h>
+
+int printf(const char *format, ...);
+
 .SH DESCRIPTION
+This is a simple version of the printf function written for a Holberton School Project. I will be gradually be adding more functionality in the near future.
 
 .SH OPTIONS
 
+.B %c
+.B %s
+.B %d
+.B %i
+
+
 .SH SEE ALSO
+.I printf(1), putchar(3), stdarg(3).
 
 .SH AUTHOR
-B BWASHI,
-GUNNAR BACHELOR
+.I GUNNAR BACHELOR
 
 

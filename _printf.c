@@ -24,9 +24,6 @@ int _printf(const char *format, ...)
 	{
 		for (; format[i] && format[i] != '%'; i++)
 		{
-			if (i == 0 && format[i] == '%' && format[i + 1] == '\0')
-				return (-1);
-
 			_putchar(format[i]);
 			j++;
 		}

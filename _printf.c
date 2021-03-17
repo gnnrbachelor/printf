@@ -42,12 +42,6 @@ int _printf(const char *format, ...)
 			i += 2;
 			continue;
 		}
-<<<<<<< HEAD
-		if (!format[i + 1])
-			return (-1);
-=======
-
->>>>>>> working
 		i++;
 	}
 	va_end(v_list);

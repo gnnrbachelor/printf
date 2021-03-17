@@ -43,7 +43,7 @@ int main(void)
     _printf("%c", '\0');
     printf("%c", '\0');
     _printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');
-    _printf("%");
+    _printf("%\n");
 
 /*
     _printf("Address:[%p]\n", addr);
@@ -57,8 +57,8 @@ int main(void)
     printf("Unknown:[%r]\n");
 */
 
- _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *) 0);
-_printf("%K\n");
+   _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *) 0);
+   _printf("%K\n");
 
 
     return (0);

@@ -1,6 +1,10 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 #include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
 
 /**
  * struct print - Holds character pointer and function pointer

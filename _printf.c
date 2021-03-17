@@ -49,8 +49,6 @@ int _printf(const char *format, ...)
 			continue;
 		}
 
-		if (!format[i + 1])
-			return (-1);
 		i++;
 	}
 	va_end(v_list);

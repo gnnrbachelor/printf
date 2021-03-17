@@ -51,4 +51,56 @@ int print_percent(va_list p)
 	return (1);
 }
 
+/**
+ * print_d - Prints number
+ *
+ * @n: Number for printing
+ *
+ * Return: Void
+ */
+
+int print_d(va_list n)
+{
+	int print_count = 0;
+	int num;
+	int temp;
+
+	num = va_arg(n, int);
+
+	if (num < 0)
+	{
+		_putchar('-');
+		print_count++;
+		num = num * -1;
+	}
+
+	temp = num;
+
+	while (temp > 9)
+	{
+		temp = temp / 10;
+		print_count++;
+	}
+
+	recursive_print(num);
+	return (print_count);
+}
+
+/**
+ * recursive_print - Prints using putchar
+ *
+ * @num: Number for printing
+ *
+ * Return: Void
+ */
+
+void recursive_print(int num)
+{
+	if (num / 10 != 0)
+		recursive_print(num / 10);
+
+	_putchar(num % 10 + '0');
+}
+
+
 

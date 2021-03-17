@@ -16,6 +16,8 @@ int (*match_spec(const char *format))(va_list)
 		{"c", print_c},
 		{"s", print_s},
 		{"%", print_percent},
+		{"d", print_d},
+		{"i", print_d},
 		{NULL, NULL}
 	};
 

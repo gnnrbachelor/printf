@@ -42,9 +42,8 @@ int main(void)
     printf("String:[%s]\n", "I am a string !");
     _printf("%c", '\0');
     printf("%c", '\0');
-    _printf("%\n");
-   _printf(NULL);
-   _printf("%!\n");
+    _printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');
+    _printf("%");
 
 /*
     _printf("Address:[%p]\n", addr);
@@ -60,8 +59,6 @@ int main(void)
 
  _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *) 0);
 _printf("%K\n");
-_printf("%!\n");
-_printf("%!\n");
 
 
     return (0);

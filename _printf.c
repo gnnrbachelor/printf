@@ -24,13 +24,18 @@ int _printf(const char *format, ...)
 	{
 		for (; format[i] && format[i] != '%'; i++)
 		{
+			if (i == 0 && format[i] == '%' && format[i + 1] == '\0')
+				return (-1);
+
 			_putchar(format[i]);
 			j++;
 		}
 		if (!format[i])
 			return (j);
+
 		if (format[i + 1])
 			specifier = match_spec(&format[i + 1]);
+
 		if (!specifier)
 		{
 			_putchar(format[i]);

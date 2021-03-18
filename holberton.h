@@ -29,5 +29,6 @@ int print_percent(va_list p);
 int print_d(va_list n);
 void recursive_print(int num);
 int num_count(int n);
+int print_b(va_list b);
 
 #endif

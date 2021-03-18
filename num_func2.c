@@ -4,9 +4,9 @@
 /**
  * print_b - prints converts unsigned int to binary
  *
- * @p: Pointer to arg
+ * @b: Pointer to arg
  *
- * Return: # digit printed
+ * Return: # digits printed
  */
 
 int print_b(va_list b)

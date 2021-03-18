@@ -11,11 +11,13 @@ int printf(const char *format, ...);
 This is a simple version of the printf function written for a Holberton School Project. I will be gradually be adding more functionality in the near future.
 
 .SH OPTIONS
+The following specifiers are handled:
 
-.B %c
-.B %s
-.B %d
-.B %i
+.B %c - Character.
+.B %s - String.
+.B %d - Integer.
+.B %i - Integer.
+.b %b - Converts from decimal to binary.
 
 
 .SH SEE ALSO

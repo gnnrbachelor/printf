@@ -71,7 +71,7 @@ int print_r(va_list r)
 /**
  * print_R - Applies Rot13 to string
  *
- * @r: Pointer to string
+ * @R: Pointer to string
  *
  * Return: # of characters printed
  */

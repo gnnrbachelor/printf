@@ -7,10 +7,10 @@ This is a simple recreation of the C Library  printf() function created for a Ho
 ##Examples
 
 * \_printf("with proper grammar, but the outcome is a piece of art,\n");
-      -Output: with proper grammar, but the outcome is a piece of art,
+      - Output: with proper grammar, but the outcome is a piece of art,
 
 * \_printf("Hello, from  %s\n.", "Holberton School");
-      -Output: Hello, from Holberton School.
+      - Output: Hello, from Holberton School.
 
 ## Conversion Specifiers
 
@@ -23,5 +23,5 @@ This version handles the following specifiers.
 |    %d     | Signed Integer                          |
 |    %i     | Signed Integer                          |
 
-#AUTHOR
+### AUTHOR
 Gunnar Bachelor

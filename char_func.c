@@ -39,4 +39,31 @@ int print_s(va_list s)
 	return (i);
 }
 
+/**
+ * print_r - Reverses String
+ *
+ * @r: Pointer to string
+ *
+ * Return: # of characters in string
+ */
 
+int print_r(va_list r)
+{
+	int i;
+	int j = 0;
+	char *str;
+
+	str = va_arg(r, char *);
+
+	if (str)
+	{
+
+		while (str[i])
+			i++;
+		j = i;
+
+		for (; i >= 0; i--)
+			_putchar(str[i]);
+	}
+	return (j);
+}

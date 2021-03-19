@@ -10,6 +10,16 @@ int printf(const char *format, ...);
 .SH DESCRIPTION
 This is a simple version of the printf function written for a Holberton School Project. I will be gradually be adding more functionality in the near future.
 
+.SH EXAMPLES
+
+.B Basic Usage
+
+_printf("with proper grammar, but the outcome is a piece of art,\n");
+Output: with proper grammar, but the outcome is a piece of art,
+
+_printf("Hello, from  %s\n.", "Holberton School");
+Output: Hello, from Holberton School.
+
 .SH OPTIONS
 The following specifiers are handled:
 
@@ -17,7 +27,6 @@ The following specifiers are handled:
 .B %s - String.
 .B %d - Integer.
 .B %i - Integer.
-.b %b - Converts from decimal to binary.
 
 
 .SH SEE ALSO
@@ -25,5 +34,3 @@ The following specifiers are handled:
 
 .SH AUTHOR
 .I GUNNAR BACHELOR
-
-

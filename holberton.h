@@ -31,5 +31,6 @@ void recursive_print(int num);
 int num_count(int n);
 int print_b(va_list b);
 int print_r(va_list r);
+int print_R(va_list R);
 
 #endif

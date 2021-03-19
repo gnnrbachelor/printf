@@ -20,6 +20,7 @@ int (*match_spec(const char *format))(va_list)
 		{"i", print_d},
 		{"b", print_b},
 		{"r", print_r},
+		{"R", print_R},
 		{NULL, NULL}
 	};
 

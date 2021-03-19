@@ -67,3 +67,38 @@ int print_r(va_list r)
 	}
 	return (j);
 }
+
+/**
+ * print_R - Applies Rot13 to string
+ *
+ * @r: Pointer to string
+ *
+ * Return: # of characters printed
+ */
+
+int print_R(va_list R)
+{
+	int i, j;
+	char *str;
+
+	str = va_arg(R, char *);
+
+	j = 0;
+
+	for (i = 0; str[i]; i++)
+	{
+		if ((str[i] >= 'A' && str[i] <= 'Z') ||
+		   (str[i] >= 'a' && str[i] <= 'z'))
+		{
+			if ((str[i] >= 'N' && str[i] <= 'Z') ||
+			   (str[i] >= 'n' && str[i] <= 'z'))
+				j += _putchar(str[i] - 13);
+			else
+				j += _putchar(str[i] + 13);
+		}
+		else
+			j += _putchar(str[i]);
+
+	}
+	return (j);
+}

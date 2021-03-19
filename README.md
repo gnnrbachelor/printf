@@ -4,13 +4,13 @@
 
 This is a simple recreation of the C Library  printf() function created for a Holberton School Project. It's designed to produce output according to the arguments and specifiers passed to it.
 
-##Examples
+## Examples
 
 * \_printf("with proper grammar, but the outcome is a piece of art,\n");
-      - Output: with proper grammar, but the outcome is a piece of art,
+       - Output: with proper grammar, but the outcome is a piece of art,
 
 * \_printf("Hello, from  %s\n.", "Holberton School");
-      - Output: Hello, from Holberton School.
+       - Output: Hello, from Holberton School.
 
 ## Conversion Specifiers
 

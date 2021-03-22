@@ -13,6 +13,10 @@ int printf(const char *format, ...);
 
 This is a simple version of the printf function written for a Holberton School Project. I will be gradually be adding more functionality in the near future.
 
+.SH RETURN VALUE
+
+Returns the number of characters printed excluding the null byte.
+
 .SH EXAMPLES
 
 .B Basic Usage
